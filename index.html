@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encyclopedia of Sharks</title>
+    <title>Shark Names</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,14 +21,42 @@
         main {
             padding: 1em;
         }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 0.5em 0;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Encyclopedia of Sharks</h1>
+        <h1>Shark Names</h1>
     </header>
     <main>
-        <p>Explore the fascinating world of sharks. Learn about different species, their habitats, and their role in the ocean ecosystem.</p>
+        <ul id="shark-list">
+            <!-- Shark names will be inserted here -->
+        </ul>
     </main>
+    <script>
+        // JavaScript to dynamically load shark names
+        document.addEventListener('DOMContentLoaded', function() {
+            const sharkNames = [
+                // Add your shark names here
+                'Great White Shark',
+                'Hammerhead Shark',
+                'Tiger Shark',
+                // Add more names
+            ];
+
+            const listElement = document.getElementById('shark-list');
+            sharkNames.forEach(name => {
+                const listItem = document.createElement('li');
+                listItem.textContent = name;
+                listElement.appendChild(listItem);
+            });
+        });
+    </script>
 </body>
 </html>
