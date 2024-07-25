@@ -3,60 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shark Names</title>
+    <title>Arjun's Discovery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
             margin: 0;
             padding: 0;
+            display: flex;
         }
         header {
             background-color: #4682b4;
             color: white;
             text-align: center;
             padding: 1em 0;
+            width: 100%;
         }
-        main {
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f0f8ff;
             padding: 1em;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .sidebar a {
+            display: block;
+            padding: 0.5em;
+            text-decoration: none;
+            color: #4682b4;
+            margin-bottom: 0.5em;
         }
-        li {
-            padding: 0.5em 0;
+        .sidebar a:hover {
+            background-color: #e6e6e6;
+        }
+        .main-content {
+            flex: 1;
+            padding: 1em;
+            overflow-y: auto;
+        }
+        .main-content h2 {
+            border-bottom: 2px solid #4682b4;
+            padding-bottom: 0.5em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Shark Names</h1>
+        <h1>Arjun's Discovery</h1>
     </header>
-    <main>
-        <ul id="shark-list">
-            <!-- Shark names will be inserted here -->
-        </ul>
-    </main>
+    <div class="container">
+        <nav class="sidebar">
+            <a href="#sharks" onclick="showContent('sharks')">Sharks</a>
+            <a href="#fossils" onclick="showContent('fossils')">Fossils</a>
+        </nav>
+        <div class="main-content" id="content">
+            <div id="sharks-content" style="display: none;">
+                <h2>Sharks</h2>
+                <ul>
+                    <li>Great White Shark</li>
+                    <li>Hammerhead Shark</li>
+                    <li>Tiger Shark</li>
+                    <!-- Add more shark names here -->
+                </ul>
+            </div>
+            <div id="fossils-content" style="display: none;">
+                <h2>Fossils</h2>
+                <ul>
+                    <li>Tyrannosaurus Rex</li>
+                    <li>Triceratops</li>
+                    <li>Stegosaurus</li>
+                    <!-- Add more fossil names here -->
+                </ul>
+            </div>
+        </div>
+    </div>
     <script>
-        // JavaScript to dynamically load shark names
-        document.addEventListener('DOMContentLoaded', function() {
-            const sharkNames = [
-                // Add your shark names here
-                'Great White Shark',
-                'Hammerhead Shark',
-                'Tiger Shark',
-                // Add more names
-            ];
-
-            const listElement = document.getElementById('shark-list');
-            sharkNames.forEach(name => {
-                const listItem = document.createElement('li');
-                listItem.textContent = name;
-                listElement.appendChild(listItem);
-            });
-        });
+        function showContent(section) {
+            document.getElementById('sharks-content').style.display = 'none';
+            document.getElementById('fossils-content').style.display = 'none';
+            document.getElementById(section + '-content').style.display = 'block';
+        }
     </script>
 </body>
 </html>
