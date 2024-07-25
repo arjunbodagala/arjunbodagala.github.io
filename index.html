@@ -52,6 +52,15 @@
             border-bottom: 2px solid #4682b4;
             padding-bottom: 0.5em;
         }
+        .image-container {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1em;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -66,6 +75,9 @@
         <div class="main-content" id="content">
             <div id="sharks-content" style="display: none;">
                 <h2>Sharks</h2>
+                <div class="image-container">
+                    <img src="https://example.com/shark-image.jpg" alt="Sharks">
+                </div>
                 <ul>
                     <li>Great White Shark</li>
                     <li>Hammerhead Shark</li>
@@ -75,6 +87,9 @@
             </div>
             <div id="fossils-content" style="display: none;">
                 <h2>Fossils</h2>
+                <div class="image-container">
+                    <img src="https://example.com/fossil-image.jpg" alt="Fossils">
+                </div>
                 <ul>
                     <li>Tyrannosaurus Rex</li>
                     <li>Triceratops</li>
