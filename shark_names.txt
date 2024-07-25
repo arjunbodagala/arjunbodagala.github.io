@@ -1,0 +1,438 @@
+<li>Ptychodus elevatus  </li>
+<li>Ptychodus belluci  </li>
+<li>Ptychodus mortoni  </li>
+<li>Ptychodus rugosus                                         </li>
+<li>Ptychodus altior  </li>
+<li>Ptychodus anonymous  </li>
+<li>Ptychodus arcuatus  </li>
+<li>Ptychodus articulatus  </li>
+<li>Ptychodus atcocnsis  </li>
+<li>Ptychodus concentericus  </li>
+<li>Ptychodus gibbelrus  </li>
+<li>Ptychodus janewayii </li>
+<li>Ptychodus mahaklensis  </li>
+<li>Ptychodus multistriatus  </li>
+<li>Ptychodus oweni </li>
+<li>Ptychodus paucisulacatus </li>
+<li>Ptychodus polygrus  </li>
+<li>Ptychodus spectabili </li>
+<li>Ptychodus deccurens </li>
+<li>Ptychous marginalis </li>
+<li>Ptychodus mammilaris </li>
+<li>Ptychodus whippleii </li>
+<li>Ptychodus chapelli </li>
+<li>Ptychodus mantelli </li>
+<li>Ptychodus martini  </li>
+<li>Ptychodu rhombodus </li>
+<li>Ptychodus occidentalis  </li>
+<li>Ptychodus latissimus </li>
+<li>Acrodus scaber </li>
+<li>Acrodus georgi </li>
+<li>Acrodus humilis </li>
+<li>Acrodus anningae </li>
+<li>Acrodus alexandrae </li>
+<li>Acrodus b.  </li>
+<li>Acrodus c.  </li>
+<li>Acrodus lm. </li>
+<li>Acrodus g. </li>
+<li>Acrodus la. </li>
+<li>Acrodus m.  </li>
+<li>Acrodus n. </li>
+<li>Acrodus op. </li>
+<li>Acrodus or. </li>
+<li>Acrodus n. </li>
+<li>Acrodus simplex  </li>
+<li>Acrodus su. </li>
+<li>Acrodus v. </li>
+<li>Acrodus w. </li>
+<li>Hybodus af. </li>
+<li>Hybodus ap. </li>
+<li>Hybodus an  </li>
+<li>Hybodus au. </li>
+<li>Hybodus ae. </li>
+<li>Hybodus clavus </li>
+<li>Hybodus clo. </li>
+<li>Hybodus cu. </li>
+<li>Hybodus de. </li>
+<li>Hybodus du. </li>
+<li>Hybodus e. </li>
+<li>Hybodus g. </li>
+<li>Hybodus ha. </li>
+<li>Hybodus ho. </li>
+<li>Hybodus hu. </li>
+<li>Hybodus k. </li>
+<li>Hybodus i. </li>
+<li>Hybodus la.  </li>
+<li>Hybodus lo. </li>
+<li>Hybodus me.  </li>
+<li>Hybodus mi  </li>
+<li>Hybodus mak. </li>
+<li>Hybodus major </li>
+<li>Hybodus mug. </li>
+<li>Hybodus multic. </li>
+<li>Hybodus multip. </li>
+<li>Hybodus ne. </li>
+<li>Hybodus no. </li>
+<li>Hybodus s. </li>
+<li>Hybodus o. </li>
+<li>Asteracanthus b. </li>
+<li>Asteracanthus a. </li>
+<li>Asteracanthus m. </li>
+<li>Asteracanthus g. </li>
+<li>Asteracanthus o. </li>
+<li>Artacanthus </li>
+<li> Namatus  </li>
+<li>Carcharopsis p. </li>
+<li>Carcharopsis w. </li>
+<li>Dabasacanthus  </li>
+<li>Doratodus </li>
+<li>Echinodus </li>
+<li>Holmacanthus </li>
+<li>Egertodon t.  </li>
+<li>Egertodon b. </li>
+<li>Moyocanthus </li>
+<li>Hybocladodus p. </li>
+<li>Hybocladodus t. </li>
+<li>Khoratodus </li>
+<li>Polyacrodus ob. </li>
+<li>Polyacrodus or </li>
+<li>Polyacrodus ot. </li>
+<li>Polyacrodus d. </li>
+<li>Polyacrodus r. </li>
+<li>Polyacrodus mu. </li>
+<li>Polyacrodus z. </li>
+<li>Polyacrodus wi. </li>
+<li>Polyacrodus pa. </li>
+<li>Polyacrodus su. </li>
+<li>Polyacrodus nons. </li>
+<li>Polyacrodus nod. </li>
+<li>Polyacrodus sp. </li>
+<li>Polyacrodus mi. </li>
+<li>Polyacrodus nonc. </li>
+<li>Polyacrodus parvidens </li>
+<li>Polyacrodus pal. </li>
+<li>Polyacrodus pe. </li>
+<li>Polyacrodus r. </li>
+<li>Polyacrodus sp. </li>
+<li>Polyacrodus su. </li>
+<li>Polyacrodus wa. </li>
+<li>Polyacrodus wi. </li>
+<li>Polyacrodus z.  </li>
+<li>Polyacrodus a. </li>
+<li>Polyacrodus br </li>
+<li>    Polyacrodus bu. </li>
+<li>Polyacrodus cla. </li>
+<li>Polyacrodus clo. </li>
+<li>Polyacrodus g.  </li>
+<li>Polyacrodus co. </li>
+<li>Polyacrodus h. </li>
+<li>Polyacrodus i. </li>
+<li>Polyacrodus po. </li>
+<li>Polyacrodus py. </li>
+<li>Polyacrodus tr. </li>
+<li>Polyacrodus ti. </li>
+<li>Meristodon pa. </li>
+<li>Meristodon pl. </li>
+<li>Meristodon po. </li>
+<li>Meristodon rapax </li>
+<li>Meristodon rar. </li>
+<li>Meristodon re. </li>
+<li>Meristodon ru. </li>
+<li>Meristodon sag. </li>
+<li>Meristodon sh. </li>
+<li>Meristodon si. </li>
+<li>Meristodon st. </li>
+<li> Meristodon su. </li>
+<li>Meristodon you. </li>
+<li>Meristodon yoh. </li>
+<li>Meristodon z. </li>
+<li>Onychoselache </li>
+<li>Nemacanthus </li>
+<li>Lambodus </li>
+<li>Petrodus o. </li>
+<li>Petrodus p. </li>
+<li>Thiadus </li>
+<li>Mukdahanodus  </li>
+<li>Pororhiza  </li>
+<li>Sphenacanthus s. </li>
+<li>Sphenacanthus ca. </li>
+<li>Sphenacanthus a. </li>
+<li>Sphenacanthus i. </li>
+<li>Sphenacanthus co. </li>
+<li>Sphenacanthus h. </li>
+<li>Sphenacanthus g. </li>
+<li>Sphenacanthus m. </li>
+<li>Styracodus </li>
+<li>Tribodus </li>
+<li>Prionybodus </li>
+<li>Trichorhipis </li>
+<li>Wodnika b. </li>
+<li>Wodnika s. </li>
+<li>Meristodonoids n. </li>
+<li>Meristodonoids b.  </li>
+<li>Meristodonoids r. </li>
+<li>Meristodonoids s. </li>
+<li>Diplolissodus </li>
+<li>Lissodus af. </li>
+<li>Lissodus an. </li>
+<li>Lissodus ca. </li>
+<li>Lissodus cr. </li>
+<li>Lissodus he.  </li>
+<li>Lissodus ha  </li>
+<li>Lissodus la. </li>
+<li>Lissodus lo. </li>
+<li>Lissodus lev. </li>
+<li>Lissodus lep. </li>
+<li>Lissodus leiod. </li>
+<li>Lissodus leiop </li>
+<li>Lissodus lop. </li>
+<li>Lissodus d. </li>
+<li>Lissodus s. </li>
+<li>Lochidione e. </li>
+<li>Lochidione i.  </li>
+<li>Lochidione f. </li>
+<li>Lochiodon a.  </li>
+<li>Lochiodon ba. </li>
+<li>Lochiodon br. </li>
+<li>Lochiodon d. </li>
+<li>Lochiodon gri. </li>
+<li>Lochiodon gre. </li>
+<li> Lochiodon n. </li>
+<li>Lochiodon i. </li>
+<li>Lochiodon ma. </li>
+<li>Lochiodon mi. </li>
+<li>Palaexyris r. </li>
+<li>Palaexris n. </li>
+<li>Palaexris tr. </li>
+<li>Palaexris al. </li>
+<li>Palaexris ap. </li>
+<li>Palaexris q. </li>
+<li>Palaexris d. </li>
+<li>Palaexris pri. </li>
+<li>Palaexris pre. </li>
+<li>Palaexris w. </li>
+<li>Palaexris ad. </li>
+<li>Palaexris hu. </li>
+<li>Palaexris t. </li>
+<li>Palaexris l.  </li>
+<li>Palaexris b. </li>
+<li>Palaexris he. </li>
+<li>Palaexris f. </li>
+<li>Fayolia c. </li>
+<li>Fayolia g. </li>
+<li>Fayolia d. </li>
+<li>Fayolia s. </li>
+<li>Falcantus  </li>
+<li>Symmorium </li>
+<li>Democle  </li>
+<li> Vetacapsula  c. </li>
+<li>Vetacapsula j. </li>
+<li>Vetacapsula m. </li>
+<li>Vetacapsula p. </li>
+<li>Jiaodontus  v. </li>
+<li>Jiaodontus m. </li>
+<li>Palaebates a. </li>
+<li>Palaebates r. </li>
+<li>Palaebates s. </li>
+<li>Palaebates v. </li>
+<li>Palaebates p. </li>
+<li>Deihim  </li>
+<li>Holmesella  </li>
+<li>Protacrodus a. </li>
+<li>Protacrodus o. </li>
+<li>Protacrodus v. </li>
+<li>Protacrodus s. </li>
+<li>Tamiobatis  </li>
+<li>Pseudodalatias b. </li>
+<li>Pseudodalatias h. </li>
+<li>Steinbachodus </li>
+<li>Greenland shark </li>
+<li></li>
+<li> </li>
+<li>Meristodon s. </li>
+<li>Hemipristis serra </li>
+<li>Partodus </li>
+<li>Cladoselache </li>
+<li>Cobelodus </li>
+<li>Broadtooth mako  </li>
+<li>Ctenacanthus </li>
+<li>Triodus  </li>
+<li>Tristychius </li>
+<li>Akmonistion  </li>
+<li>Xethacanthus l.  </li>
+<li>Xethacanthus d. </li>
+<li>Pleurocanthus  </li>
+<li>Expleurocanthus </li>
+<li>Libanopristis </li>
+<li>Megactenopetalus </li>
+<li>Glikmanius </li>
+<li>Harpagofututor </li>
+<li>Campbodus </li>
+<li>Listracanthus </li>
+<li>Eagle shark </li>
+<li>Godzilla shark </li>
+<li>Diablodontus </li>
+<li>Protolamna c. </li>
+<li>Protolamna s. </li>
+<li>Protolamna r. </li>
+<li>Cretolamna a.  </li>
+<li>Cretolamna m. </li>
+<li>Megalamna </li>
+<li>Paleocarcharias </li>
+<li>Ischrhiza </li>
+<li>Orodus  </li>
+<li>Spade snout  </li>
+<li>Orthacanthus </li>
+<li>Bandriga  </li>
+<li>Protoginglymostoma </li>
+<li>Galagadon </li>
+<li>Isurus desori  </li>
+<li>Isurus hastalis </li>
+<li>Isurus planus </li>
+<li>Giant thresher shark </li>
+<li>Serrated giant thresher  </li>
+<li>Crow shark(squailicorax) </li>
+<li>Anisopleurodontist </li>
+<li>Giant frilled shark </li>
+<li>Cardbiodon </li>
+<li>Cretodus </li>
+<li>Edestus gigantea </li>
+<li>Edestus vorax </li>
+<li>Edestus newtoni  </li>
+<li>Edestus h. </li>
+<li>Edestus t. </li>
+<li>Edestus minor </li>
+<li>Megolodon  </li>
+<li>Sarcoprion </li>
+<li>Kaibavenator </li>
+<li>Ginsu shark  </li>
+<li>Trogocladodus </li>
+<li>Onchopristis d. </li>
+<li>Onchopristis n. </li>
+<li>Atlanticopristis </li>
+<li>Otodus angustidens  </li>
+<li>Otodus chubensis </li>
+<li>Otodus obliquus </li>
+<li>Otodus sokolovi  </li>
+<li>Otodus auriculatus </li>
+<li>Otodus aksuaticus  </li>
+<li>Leptostrax m. </li>
+<li>Leptostrax s. </li>
+<li>Saivodud </li>
+<li>Caseodus </li>
+<li>Parahelicoprion m.  </li>
+<li>Parahelicoprion c. </li>
+<li>Helicoprion d. </li>
+<li>Helicoprion b. </li>
+<li>Helicoprion f. </li>
+<li>Helicoprion e. </li>
+<li>Anomotodon n. </li>
+<li>Anomotodon pl. </li>
+<li>Anomotodon pr. </li>
+<li>Anomotodon m. </li>
+<li>Carcharocle chubentsis </li>
+<li>Carcharocle auriculatus </li>
+<li>Carcharocle  </li>
+<li>Carcharocle  </li>
+<li>Carcorocle s. </li>
+<li>Fadenia </li>
+<li>Ornitoprion  </li>
+<li>Nagapriodon eury. </li>
+<li>Meghachasma a. </li>
+<li>shark </li>
+<li>angustidens  </li>
+<li>aksuaticus </li>
+<li>Sinohelicoprion qom. </li>
+<li>Sinohelicoprion chang. </li>
+<li>Sinohelicoprion mac. </li>
+<li>Carcharomodus </li>
+<li>Chlamydoselachus bra. </li>
+<li>Carcharodon plic. </li>
+<li> </li>
+<li>Hubbel’s white shark </li>
+<li>Giant white shark </li>
+<li>Narrow white shark </li>
+<li>Hooked white shark </li>
+<li>Escher’s white shark </li>
+<li>Sphryna laevissma  </li>
+<li>Camplyprion iva. </li>
+<li>Camplyprion ann. </li>
+<li>Maghirboselache </li>
+<li>Novaculodus b. </li>
+<li>Microklomax  </li>
+<li>Romerodus </li>
+<li>False megamouth” shark </li>
+<li>Synechodus </li>
+<li>Notidanodon </li>
+<li>Paleocarcharias </li>
+<li>Crocodile shark  </li>
+<li>Goblin shark  </li>
+<li>Small tooth sand tiger </li>
+<li>Sand tiger  </li>
+<li>Tiger shark </li>
+<li>Speartooth lemon shark </li>
+<li>Lemon shark </li>
+<li>Bigeye lemon shark  </li>
+<li>Sharpnose sevengill </li>
+<li>Broadnose sevengill </li>
+<li>Blunt nose sixgill </li>
+<li>Collinson’s sixgill </li>
+<li>South African frilled shark </li>
+<li>Frilled shark </li>
+<li>Petalodont </li>
+<li>Strigilodus </li>
+<li>Palaeohypotodus bizzocoi </li>
+<li> Cladodus </li>
+<li>Toxoprion lec. </li>
+<li>Squailoraja </li>
+<li> Myriacanthus </li>
+<li>Wide-eye </li>
+<li>Psammodus rugosus </li>
+<li>Psammodus porosus </li>
+<li>Cladodus </li>
+<li> Basking shark </li>
+<li>Petalodus </li>
+<li>latidens </li>
+<li>aduncus </li>
+<li> </li>
+<li>Mayumbensis </li>
+<li>Cuvier </li>
+<li>Psysogaleus contortus  </li>
+<li>Neosaivodus </li>
+<li>Greenland dogfish  </li>
+<li>Spiny dogfish </li>
+<li>Smooth dogfish </li>
+<li>Northern dogfish  </li>
+<li>Hooktooth dogfish  </li>
+<li>Cuban dogfish </li>
+<li>Granular dogfish </li>
+<li>Longnose velvet dogfish </li>
+<li>Short nose dogfish  </li>
+<li>Velvet dogfish </li>
+<li>Arrowhead dogfish </li>
+<li>Bird beak dogfish </li>
+<li>Portuguese dogfish  </li>
+<li>Small-spotted catshark  </li>
+<li>Cloudy catshark  </li>
+<li>Chain catshark  </li>
+<li>Australian sawtail catshark </li>
+<li>Australian marbled catshark  </li>
+<li>Whitesandle catshark  </li>
+<li>Philliphenes catshark </li>
+<li>Coral catshark  </li>
+<li>Red- spotted catshark  </li>
+<li>Grey-spotted catshark  </li>
+<li>Black-mouthed catshark </li>
+<li>Figaro catshark </li>
+<li>Smallfin catshark  </li>
+<li>Bristly catshark </li>
+<li>Banded sand catshark  </li>
+<li>Leopard catshark  </li>
+<li>Natal shyshark </li>
+<li>Puffader shyshark  </li>
+<li>The lost shark </li>
+<li>Mandarin catshark  </li>
+<li>Seychelles catshark </li>
+<li>Fos  </li>
+<li>Viper dogfish  </li>
+<li></li>
