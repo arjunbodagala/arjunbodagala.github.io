@@ -64,9 +64,9 @@
             text-align: center;
         }
         .image-container img {
-            width: 220px; /* Approximate width for 4 credit card size */
-            height: 140px; /* Approximate height for 4 credit card size */
-            object-fit: cover; /* Ensures image covers the area while maintaining aspect ratio */
+            width: 100%; /* Ensure the image fits its container */
+            height: auto; /* Maintain the aspect ratio */
+            object-fit: cover;
             border-radius: 8px;
         }
         .drawings-tabs {
@@ -110,7 +110,7 @@
             <div id="sharks-content" style="display: none;">
                 <h2>Sharks</h2>
                 <div class="image-container">
-                    <img src="images/shark-image.jpg" alt="Sharks">
+                    <img src="sharks/shark-image.jpg" alt="Sharks">
                 </div>
                 <ol id="shark-list">
                     <!-- Shark names will be inserted here -->
@@ -119,7 +119,7 @@
             <div id="fossils-content" style="display: none;">
                 <h2>Fossils</h2>
                 <div class="image-container">
-                    <img src="images/fossil-image.jpg" alt="Fossils">
+                    <img src="fossils/fossil-image.jpg" alt="Fossils">
                 </div>
                 <ol id="fossil-list">
                     <!-- Fossil names will be inserted here -->
@@ -153,16 +153,21 @@
         </div>
     </div>
     <script>
+        let sharkLoaded = false;
+        let fossilLoaded = false;
+
         function showContent(section) {
             document.getElementById('sharks-content').style.display = 'none';
             document.getElementById('fossils-content').style.display = 'none';
             document.getElementById('my-drawings-content').style.display = 'none';
             document.getElementById(section + '-content').style.display = 'block';
 
-            if (section === 'sharks') {
+            if (section === 'sharks' && !sharkLoaded) {
                 loadSharkNames();
-            } else if (section === 'fossils') {
+                sharkLoaded = true;
+            } else if (section === 'fossils' && !fossilLoaded) {
                 loadFossilNames();
+                fossilLoaded = true;
             }
         }
 
