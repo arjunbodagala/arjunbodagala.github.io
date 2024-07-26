@@ -63,24 +63,42 @@
             height: 140px; /* Approximate height for 4 credit card size */
             object-fit: cover; /* Ensures image covers the area while maintaining aspect ratio */
         }
-        .notes-list {
-            padding-left: 20px;
+        .drawings-tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1em;
+            cursor: pointer;
         }
-        .note-content {
-            white-space: pre-wrap;
+        .drawings-tabs div {
+            padding: 1em;
+            background-color: #e0f7fa;
+            border: 1px solid #b2ebf2;
+            border-radius: 4px;
+        }
+        .drawings-tabs div:hover {
+            background-color: #b2ebf2;
+        }
+        .drawings-content {
+            display: none;
+        }
+        .drawings-content.active {
+            display: block;
+        }
+        ol {
+            padding-left: 20px;
         }
     </style>
     <script src="https://alcdn.msauth.net/browser/2.17.0/js/msal-browser.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Research</h1>
+        <h1>Welcome to Arjun's World</h1>
     </header>
     <div class="container">
         <nav class="sidebar">
             <a href="#sharks" onclick="showContent('sharks')">Sharks</a>
             <a href="#fossils" onclick="showContent('fossils')">Fossils</a>
-            <a href="#my-notes" onclick="showContent('my-notes')">My Notes</a>
+            <a href="#my-drawings" onclick="showContent('my-drawings')">My Drawings</a>
         </nav>
         <div class="main-content" id="content">
             <div id="sharks-content" style="display: none;">
@@ -101,13 +119,29 @@
                     <!-- Fossil names will be inserted here -->
                 </ol>
             </div>
-            <div id="my-notes-content" style="display: none;">
-                <h2>My Notes</h2>
-                <ul id="notes-list" class="notes-list">
-                    <!-- Note links will be inserted here -->
-                </ul>
-                <div id="note-content" class="note-content">
-                    <!-- Note content will be displayed here -->
+            <div id="my-drawings-content" style="display: none;">
+                <h2>My Drawings</h2>
+                <div class="drawings-tabs">
+                    <div onclick="showDrawingContent('shark-drawings')">Sharks</div>
+                    <div onclick="showDrawingContent('fossil-drawings')">Fossils</div>
+                    <div onclick="showDrawingContent('pokemon-drawings')">Pokemon</div>
+                    <div onclick="showDrawingContent('pooh-drawings')">Winnie the Pooh</div>
+                </div>
+                <div id="shark-drawings" class="drawings-content">
+                    <h3>Shark Drawings</h3>
+                    <!-- Insert Shark drawings here -->
+                </div>
+                <div id="fossil-drawings" class="drawings-content">
+                    <h3>Fossil Drawings</h3>
+                    <!-- Insert Fossil drawings here -->
+                </div>
+                <div id="pokemon-drawings" class="drawings-content">
+                    <h3>Pokemon Drawings</h3>
+                    <!-- Insert Pokemon drawings here -->
+                </div>
+                <div id="pooh-drawings" class="drawings-content">
+                    <h3>Winnie the Pooh Drawings</h3>
+                    <!-- Insert Winnie the Pooh drawings here -->
                 </div>
             </div>
         </div>
@@ -115,7 +149,7 @@
     <script>
         const msalConfig = {
             auth: {
-                clientId: 'YOUR_CLIENT_ID',
+                clientId: 'YOUR_CLIENT_ID',  // Replace with your client ID
                 authority: 'https://login.microsoftonline.com/common',
                 redirectUri: 'http://localhost'
             }
@@ -126,15 +160,13 @@
         function showContent(section) {
             document.getElementById('sharks-content').style.display = 'none';
             document.getElementById('fossils-content').style.display = 'none';
-            document.getElementById('my-notes-content').style.display = 'none';
+            document.getElementById('my-drawings-content').style.display = 'none';
             document.getElementById(section + '-content').style.display = 'block';
 
             if (section === 'sharks') {
                 loadSharkNames();
             } else if (section === 'fossils') {
                 loadFossilNames();
-            } else if (section === 'my-notes') {
-                loginAndLoadNotes();
             }
         }
 
@@ -148,7 +180,7 @@
                     lines.forEach((line, index) => {
                         if (line.trim()) { // Avoid empty lines
                             const li = document.createElement('li');
-                            li.textContent = line.trim();
+                            li.textContent = `${index + 1}. ${line.trim()}`;
                             sharkList.appendChild(li);
                         }
                     });
@@ -166,7 +198,7 @@
                     lines.forEach((line, index) => {
                         if (line.trim()) { // Avoid empty lines
                             const li = document.createElement('li');
-                            li.textContent = line.trim();
+                            li.textContent = `${index + 1}. ${line.trim()}`;
                             fossilList.appendChild(li);
                         }
                     });
@@ -174,58 +206,11 @@
                 .catch(error => console.error('Error loading fossil names:', error));
         }
 
-        function loginAndLoadNotes() {
-            const loginRequest = {
-                scopes: ["Notes.Read", "Notes.Read.All"]
-            };
+        function showDrawingContent(drawingType) {
+            const drawingSections = document.querySelectorAll('.drawings-content');
+            drawingSections.forEach(section => section.classList.remove('active'));
 
-            msalInstance.loginPopup(loginRequest)
-                .then(response => {
-                    loadNotes(response.accessToken);
-                })
-                .catch(error => {
-                    console.error('Error logging in:', error);
-                });
-        }
-
-        function loadNotes(accessToken) {
-            fetch('https://graph.microsoft.com/v1.0/me/onenote/pages', {
-                headers: {
-                    'Authorization': `Bearer ${accessToken}`
-                }
-            })
-                .then(response => response.json())
-                .then(data => {
-                    const notesList = document.getElementById('notes-list');
-                    notesList.innerHTML = ''; // Clear existing content
-                    data.value.forEach(note => {
-                        const li = document.createElement('li');
-                        const a = document.createElement('a');
-                        a.href = "#";
-                        a.textContent = note.title;
-                        a.onclick = function() {
-                            loadNoteContent(note.id, accessToken);
-                        };
-                        li.appendChild(a);
-                        notesList.appendChild(li);
-                    });
-                })
-                .catch(error => console.error('Error loading notes:', error));
-        }
-
-        function loadNoteContent(noteId, accessToken) {
-            fetch(`https://graph.microsoft.com/v1.0/me/onenote/pages/${noteId}/content`, {
-                headers: {
-                    'Authorization': `Bearer ${accessToken}`,
-                    'Accept': 'application/json'
-                }
-            })
-                .then(response => response.text())
-                .then(data => {
-                    const noteContent = document.getElementById('note-content');
-                    noteContent.innerHTML = data;
-                })
-                .catch(error => console.error('Error loading note content:', error));
+            document.getElementById(drawingType).classList.add('active');
         }
     </script>
 </body>
