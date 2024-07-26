@@ -63,7 +63,14 @@
             height: 140px; /* Approximate height for 4 credit card size */
             object-fit: cover; /* Ensures image covers the area while maintaining aspect ratio */
         }
+        .notes-list {
+            padding-left: 20px;
+        }
+        .note-content {
+            white-space: pre-wrap;
+        }
     </style>
+    <script src="https://alcdn.msauth.net/browser/2.17.0/js/msal-browser.min.js"></script>
 </head>
 <body>
     <header>
@@ -73,6 +80,7 @@
         <nav class="sidebar">
             <a href="#sharks" onclick="showContent('sharks')">Sharks</a>
             <a href="#fossils" onclick="showContent('fossils')">Fossils</a>
+            <a href="#my-notes" onclick="showContent('my-notes')">My Notes</a>
         </nav>
         <div class="main-content" id="content">
             <div id="sharks-content" style="display: none;">
@@ -93,18 +101,40 @@
                     <!-- Fossil names will be inserted here -->
                 </ol>
             </div>
+            <div id="my-notes-content" style="display: none;">
+                <h2>My Notes</h2>
+                <ul id="notes-list" class="notes-list">
+                    <!-- Note links will be inserted here -->
+                </ul>
+                <div id="note-content" class="note-content">
+                    <!-- Note content will be displayed here -->
+                </div>
+            </div>
         </div>
     </div>
     <script>
+        const msalConfig = {
+            auth: {
+                clientId: 'YOUR_CLIENT_ID',
+                authority: 'https://login.microsoftonline.com/common',
+                redirectUri: 'http://localhost'
+            }
+        };
+
+        const msalInstance = new msal.PublicClientApplication(msalConfig);
+
         function showContent(section) {
             document.getElementById('sharks-content').style.display = 'none';
             document.getElementById('fossils-content').style.display = 'none';
+            document.getElementById('my-notes-content').style.display = 'none';
             document.getElementById(section + '-content').style.display = 'block';
 
             if (section === 'sharks') {
                 loadSharkNames();
             } else if (section === 'fossils') {
                 loadFossilNames();
+            } else if (section === 'my-notes') {
+                loginAndLoadNotes();
             }
         }
 
@@ -115,7 +145,7 @@
                     const sharkList = document.getElementById('shark-list');
                     sharkList.innerHTML = ''; // Clear existing content
                     const lines = text.split('\n');
-                    lines.forEach(line => {
+                    lines.forEach((line, index) => {
                         if (line.trim()) { // Avoid empty lines
                             const li = document.createElement('li');
                             li.textContent = line.trim();
@@ -133,7 +163,7 @@
                     const fossilList = document.getElementById('fossil-list');
                     fossilList.innerHTML = ''; // Clear existing content
                     const lines = text.split('\n');
-                    lines.forEach(line => {
+                    lines.forEach((line, index) => {
                         if (line.trim()) { // Avoid empty lines
                             const li = document.createElement('li');
                             li.textContent = line.trim();
@@ -142,6 +172,60 @@
                     });
                 })
                 .catch(error => console.error('Error loading fossil names:', error));
+        }
+
+        function loginAndLoadNotes() {
+            const loginRequest = {
+                scopes: ["Notes.Read", "Notes.Read.All"]
+            };
+
+            msalInstance.loginPopup(loginRequest)
+                .then(response => {
+                    loadNotes(response.accessToken);
+                })
+                .catch(error => {
+                    console.error('Error logging in:', error);
+                });
+        }
+
+        function loadNotes(accessToken) {
+            fetch('https://graph.microsoft.com/v1.0/me/onenote/pages', {
+                headers: {
+                    'Authorization': `Bearer ${accessToken}`
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const notesList = document.getElementById('notes-list');
+                    notesList.innerHTML = ''; // Clear existing content
+                    data.value.forEach(note => {
+                        const li = document.createElement('li');
+                        const a = document.createElement('a');
+                        a.href = "#";
+                        a.textContent = note.title;
+                        a.onclick = function() {
+                            loadNoteContent(note.id, accessToken);
+                        };
+                        li.appendChild(a);
+                        notesList.appendChild(li);
+                    });
+                })
+                .catch(error => console.error('Error loading notes:', error));
+        }
+
+        function loadNoteContent(noteId, accessToken) {
+            fetch(`https://graph.microsoft.com/v1.0/me/onenote/pages/${noteId}/content`, {
+                headers: {
+                    'Authorization': `Bearer ${accessToken}`,
+                    'Accept': 'application/json'
+                }
+            })
+                .then(response => response.text())
+                .then(data => {
+                    const noteContent = document.getElementById('note-content');
+                    noteContent.innerHTML = data;
+                })
+                .catch(error => console.error('Error loading note content:', error));
         }
     </script>
 </body>
