@@ -104,4 +104,45 @@
             if (section === 'sharks') {
                 loadSharkNames();
             } else if (section === 'fossils') {
-                loadFossilNa
+                loadFossilNames();
+            }
+        }
+
+        function loadSharkNames() {
+            fetch('shark_names.txt')
+                .then(response => response.text())
+                .then(text => {
+                    const sharkList = document.getElementById('shark-list');
+                    sharkList.innerHTML = ''; // Clear existing content
+                    const lines = text.split('\n');
+                    lines.forEach(line => {
+                        if (line.trim()) { // Avoid empty lines
+                            const li = document.createElement('li');
+                            li.textContent = line.trim();
+                            sharkList.appendChild(li);
+                        }
+                    });
+                })
+                .catch(error => console.error('Error loading shark names:', error));
+        }
+
+        function loadFossilNames() {
+            fetch('fossil_names.txt')
+                .then(response => response.text())
+                .then(text => {
+                    const fossilList = document.getElementById('fossil-list');
+                    fossilList.innerHTML = ''; // Clear existing content
+                    const lines = text.split('\n');
+                    lines.forEach(line => {
+                        if (line.trim()) { // Avoid empty lines
+                            const li = document.createElement('li');
+                            li.textContent = line.trim();
+                            fossilList.appendChild(li);
+                        }
+                    });
+                })
+                .catch(error => console.error('Error loading fossil names:', error));
+        }
+    </script>
+</body>
+</html>
